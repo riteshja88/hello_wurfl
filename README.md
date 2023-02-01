@@ -18,3 +18,19 @@ hello_wurfl/my-app/wurfl-1.12.8.0.jar
 $ ls hello_wurfl/my-app/wurfl.zip
 hello_wurfl/my-app/wurfl.zip
 ```
+
+
+```
+$ cat ua|java -cp "wurfl-1.12.8.0.jar:target/my-app-1.0-SNAPSHOT.jar:./lib/*" com.mycompany.app.App
+[main] INFO com.scientiamobile.wurfl.core.resource.FileLoader - closing input stream: ZipInputStream
+[main] INFO com.scientiamobile.wurfl.core.resource.DefaultWURFLModel - WURFLModel version: Root:file:/hello_wurfl/my-app/wurfl.zip:data.scientiamobile.com - 2023-01-29 04:30:54; devices: 96809 root devices: 34522; families: 55; generic devices: 3981
+[main] INFO com.scientiamobile.wurfl.core.matchers.MatcherManager - model devices: 96809
+[main] INFO com.scientiamobile.wurfl.core.matchers.MatcherManager - model devices filtered: 93453
+[main] INFO com.scientiamobile.wurfl.core.DefaultWURFLService - DefaultWURFLService created
+false Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+false Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+false Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+false Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+false Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+false Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36
+```
